@@ -1,0 +1,18 @@
+{% extends 'navbar.html' %}
+
+{% block content %}
+{% include 'navbar.html' %}
+
+
+
+{% for semuaPostingan in BlogPost %}
+    <h1> {{semuaPostingan.judul}} </h1>
+    <h4> {{semuaPostingan.waktuPosting}} </h4>
+    <p> {{semuaPostingan.body}} </p>
+    <p> category : {{semuaPostingan.category}} </p>
+    <br>
+{% endfor %}
+    
+    
+
+{% endblock  %}

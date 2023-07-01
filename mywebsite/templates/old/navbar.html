@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                    
+                {% for link, name in nav %}
+                <div class="navbar-nav ms-auto">
+                    <a href="{{link}}" class="nav-item nav-link active"> {{name}} </a>
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+    </div>
+</nav>
+{% endblock %}
